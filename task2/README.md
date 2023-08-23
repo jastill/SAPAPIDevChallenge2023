@@ -100,7 +100,7 @@ Now to try with jq add.... initial attempts failed as the input to add was not a
 3018
 </pre>
 
-map can be used to replace <pre>[.[]|f]</pre> and is a cleaner solution
+[map](https://jqlang.github.io/jq/manual/) can be used to replace <pre>[.[]|f]</pre> and is a cleaner solution
 
 <pre>
 ➜  SAPAPIDevChallenge2023 git:(main) ✗ curl --include --header "CommunityID: johna69" --url "https://developer-challenge.cfapps.eu10.hana.ondemand.com/v1/hash(value='3018')" 
