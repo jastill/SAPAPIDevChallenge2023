@@ -3,9 +3,10 @@
 
 @endpoint=https://developer-challenge.cfapps.eu10.hana.ondemand.com
 @hashpath={{endpoint}}/v1/hash
+@communityid=johna69
 
 ###
 GET {{hashpath}}(value='')
 Accept: */*
-CommunityID: johnastill
+CommunityID: {{communityid}}
 

@@ -5,9 +5,10 @@
 @hashpath={{endpoint}}/v1/hash
 
 @value='this-is-the-year-of-the-api'
+@communityid=johna69
 
 ###
 GET {{hashpath}}(value={{value}})
 Accept: */*
-CommunityID: johnastill
+CommunityID: {{communityid}}
 
