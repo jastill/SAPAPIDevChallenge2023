@@ -37,3 +37,11 @@ Complete command with encoding
 
   "Guaran%C3%A1%20Fant%C3%A1stica"
 </pre>
+
+Playing with curl for the hash
+
+<pre>
+curl  -H "Accept: */*" -H "CommunityID: johna69" "https://developer-challenge.cfapps.eu10.hana.ondemand.com/v1/hash(value='Guaran%C3%A1%20Fant%C3%A1stica')"
+</pre>
+
+Combine them?
