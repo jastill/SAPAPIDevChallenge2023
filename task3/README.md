@@ -31,7 +31,7 @@ Complete command with encoding
 <pre>
 ➜  SAPAPIDevChallenge2023 git:(main) ✗ curl \
   -X POST "https://developer-challenge.cfapps.eu10.hana.ondemand.com/odata/v4/northbreeze/selectProduct" \
-  --silent \
+  --verbose \
   -H "Content-Type: application/json" \
   -d '{"communityid":"johna69"}' | jq '.value | @uri'
 
