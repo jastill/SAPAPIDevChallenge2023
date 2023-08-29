@@ -4,10 +4,41 @@
 @endpoint=https://developer-challenge.cfapps.eu10.hana.ondemand.com
 @hashpath={{endpoint}}/v1/hash
 
-@communityid=johna69
-@value='accounts_service_url,cloud_automation_url,entitlements_service_url,events_service_url,external_provider_registry_url,metadata_service_url,order_processing_url,provisioning_service_url,saas_registry_service_url'
+@uaa_url=
+@clientId=
+@clientSecret=
 
-###
+@userEmail=<email>
+@userPassword=<password>
+
+@communityid=johna69
+@value='12'
+
+### Get Hash
 GET {{hashpath}}(value={{value}})
 Accept: */*
 CommunityID: {{communityid}}
+
+### Get Token Client Credentials
+# @name authResponse
+POST {{uaa_url}}/oauth/token
+Content-Type: application/x-www-form-urlencoded
+Accept: */*
+
+grant_type=client_credentials
+&response_type=token
+&client_id={{clientId}}
+&client_secret={{clientSecret}}
+
+### Get Token Client Credentials
+# @name authResponse
+POST {{uaa_url}}/oauth/token
+Content-Type: application/x-www-form-urlencoded
+Accept: */*
+
+grant_type=password
+&response_type=token
+&client_id={{clientId}}
+&client_secret={{clientSecret}}
+&username={{userEmail}}
+&password={{userPassword}}
