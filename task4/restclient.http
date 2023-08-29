@@ -1,0 +1,21 @@
+# https://groups.community.sap.com/t5/application-development/sap-developer-challenge-apis-task-0-learn-to-share-your-task/m-p/276058
+# https://developer-challenge.cfapps.eu10.hana.ondemand.com
+
+@endpoint=https://developer-challenge.cfapps.eu10.hana.ondemand.com
+@hashpath={{endpoint}}/v1/hash
+
+@communityid=johna69
+@value='Guaran%C3%A1%20Fant%C3%A1stica'
+
+@nortbreezeendpoing=https://developer-challenge.cfapps.eu10.hana.ondemand.com/odata/v4/northbreeze
+
+###
+POST {{nortbreezeendpoing}}/selectProduct
+Content-Type: application/json
+
+{"communityid":"johna69"}
+
+###
+GET {{hashpath}}(value={{value}})
+Accept: */*
+CommunityID: {{communityid}}

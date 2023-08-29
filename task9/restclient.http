@@ -1,0 +1,13 @@
+# https://groups.community.sap.com/t5/application-development/sap-developer-challenge-apis-task-0-learn-to-share-your-task/m-p/276058
+# https://developer-challenge.cfapps.eu10.hana.ondemand.com
+
+@endpoint=https://developer-challenge.cfapps.eu10.hana.ondemand.com
+@hashpath={{endpoint}}/v1/hash
+
+@communityid=johna69
+@value='accounts_service_url,cloud_automation_url,entitlements_service_url,events_service_url,external_provider_registry_url,metadata_service_url,order_processing_url,provisioning_service_url,saas_registry_service_url'
+
+###
+GET {{hashpath}}(value={{value}})
+Accept: */*
+CommunityID: {{communityid}}

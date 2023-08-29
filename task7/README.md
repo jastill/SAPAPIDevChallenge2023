@@ -1,3 +1,26 @@
+
+# Task 7 - Create a new directory in an SAP BTP account
+
+<pre>
+➜  task4 git:(main) ✗ btp get accounts/directory 555fe68d-29fc-4cab-ba2f-329d823e0407
+Showing details for directory 555fe68d-29fc-4cab-ba2f-329d823e0407...
+
+directory id:         xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+display name:         developer-challenge
+description:          
+directory features:   DEFAULT
+created by:           xxxxxx@xxxx.xx
+custom properties:    name:   value:   
+                      task    7        
+labels:               name:   value:   
+                      task    [7]      
+parent id:            xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+parent type:          global account
+state:                OK
+state message:        Directory created.
+</pre>
+
+<pre>
 ➜  SAPAPIDevChallenge2023 git:(main) ✗ curl \                                                         
   --include \
   --header "CommunityID: johnastill" \
@@ -13,6 +36,7 @@ content-length: 64
 strict-transport-security: max-age=31536000; includeSubDomains; preload;
 
 152c5580a22889df1e531729c75674ebf347dd174a268b363c5f3cb9c6926aa0%   
+</pre>
 
 
 And once again use the right community id
